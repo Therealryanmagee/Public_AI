@@ -7,3 +7,5 @@ certifi
 requests
 torch
 torchvision
+math
+setuptools

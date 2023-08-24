@@ -1,0 +1,9 @@
+urllib3
+pillow
+numpy
+idna
+charset-normalizer
+certifi
+requests
+torch
+torchvision

@@ -1,3 +1,8 @@
+from multihead import MultiHeadAttention
+from pos_feedforward import PositionWiseFeedForward
+import torch.nn as nn
+
+
 class EncoderLayer(nn.Module):
     def __init__(self, d_model, num_heads, d_ff, dropout):
         super(EncoderLayer, self).__init__()
@@ -13,7 +18,6 @@ class EncoderLayer(nn.Module):
         ff_output = self.feed_forward(x)
         x = self.norm2(x + self.dropout(ff_output))
         return x
-
 
 
 class DecoderLayer(nn.Module):

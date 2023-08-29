@@ -1,9 +1,12 @@
-
-
-# The PositionWiseFeedForward class extends PyTorch’s nn.Module and implements a position-wise feed-forward network.
-# The class initializes with two linear transformation layers and a ReLU activation function.
-# The forward method applies these transformations and activation function sequentially to compute the output.
-# This process enables the model to consider the position of input elements while making predictions.
+import torch.nn as nn
+import math
+import torch
+# """
+#  The PositionWiseFeedForward class extends PyTorch’s nn.Module and implements a position-wise feed-forward network.
+#  The class initializes with two linear transformation layers and a ReLU activation function.
+#  The forward method applies these transformations and activation function sequentially to compute the output.
+#  This process enables the model to consider the position of input elements while making predictions.
+# """
 
 class PositionWiseFeedForward(nn.Module):
     def __init__(self, d_model, d_ff):

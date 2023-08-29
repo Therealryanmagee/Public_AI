@@ -1,5 +1,6 @@
 # Let’s start by importing the necessary libraries and modules.
-
+from pos_feedforward import PositionalEncoding
+from multihead import MultiHeadAttention
 import torch
 import torch.nn as nn
 import torch.optim as optim
